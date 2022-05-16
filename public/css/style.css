@@ -1,0 +1,198 @@
+@font-face {
+    font-family: 'italiana-regular';
+    src: url(../fonts/Italiana-Regular.ttf);
+}
+@font-face {
+    font-family: 'halant';
+    src: url(../fonts/Halant-Regular.ttf);
+}
+body{
+    background: #ffffff;    
+}
+h1, h2, h3, h4, h5{
+    font-family: 'italiana-regular';
+    color: var(--color-boda);
+}
+p{
+    font-family: 'halant';
+    color: var(--color-boda);
+}
+.halant{
+    font-family: 'halant';
+}
+:root{
+    --color-blanco: #F4F4F4;
+    --color-boda: #564338;
+}
+.bg-blanco{
+    background: var(--color-blanco);
+}
+.bg-boda{
+    background: var(--color-boda);
+}
+.bg-alterno{
+ background: #F8F9FA;
+}
+.logo h2{
+    font-family: 'italiana-regular';
+    color: var(--color-boda);
+}
+.logo span{
+    font-family: 'halant';
+}
+.navbar-principal ul li{
+    line-height: 1px;
+}
+.navbar-principal a{
+    font-family: 'italiana-regular';
+    font-size: 16px;
+    color: var(--color-boda) !important;
+    transition:  .3s;
+}
+.navbar-principal li hr{
+    visibility: hidden;
+}
+.navbar-principal li:hover hr{
+   visibility: visible;
+}
+
+.contenedor-menu{
+    box-shadow: 0 4px 2px -2px gray;
+    z-index: 10;
+}
+.filtro{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(86, 67, 56, .58);
+    z-index: 1;
+}
+.filtro h2{
+    font-family: 'italiana-regular';
+    font-size: 7rem;
+    color: #fff;
+}
+.titulo h2{
+    font-size: 3rem;
+}
+
+.linea{
+    position: absolute;
+    height: 1000px;
+    border-left: dotted 2px #564338;
+    margin-top: 80px;
+    left: 50%;
+    z-index: -1;
+}
+
+#cuenta{
+    display: flex;
+    justify-content: center;
+}
+#cuenta .simply-section{
+    margin: 10px;
+    background: #F8F9FA;
+    width: 150px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #000;
+    box-shadow: 1px 1px 1px 1px rgba(187, 187, 187, 0.404);
+}
+#cuenta .simply-amount{
+    display: block;
+    font-family: 'halant';
+    font-size: 2rem;
+}
+#cuenta .simply-word{
+    font-family: 'halant';
+    font-size: 1.5rem;
+}
+
+.titulo i{
+   font-size: 25px;
+   color: var(--color-boda);
+}
+.mesa-regalos-border{
+    border-right: dotted 1px var(--color-boda);
+}
+.datos-mesa li{
+    font-family: 'halant';
+}
+.mesa-borde{
+    border-right: dotted 1px var(--color-boda);
+}
+form{
+    font-family: 'halant';
+    color: var(--color-boda);
+}
+form button{
+    background: var(--color-boda) !important;
+    color: #fff !important;
+}
+.btn-boletos{
+    background: var(--color-boda) !important;
+    color: #fff !important;
+}
+footer{
+    width: 100%;
+    height: 50px;
+    background: var(--color-boda);
+}
+footer p{
+    line-height: 50px;
+    color: #fff !important;
+}
+
+
+/**** LOGIN *****/
+@media screen and (max-width: 890px) {
+    .filtro h2{
+        font-size: 3rem;
+    }
+}
+@media screen and (max-width: 767px) {
+    .linea{
+        display: none;
+    }
+    .icono-hidden{
+        display: none;
+    }
+    #cuenta .simply-amount{
+        font-size: 1.2rem;
+    }
+    #cuenta .simply-word{
+        font-size: 1rem;
+    }
+    .mesa-regalos-border{
+        border-right: none !important;
+    }
+    .mesa-borde{
+        border-right: none !important;
+    }
+}
+@media screen and (max-width: 400px) {
+    .filtro h2{
+        font-size: 2rem;
+    }
+    .separador img{
+        width: 200px !important;
+    }
+    .titulo h2{
+        font-size: 2rem;
+    }
+  
+    #cuenta .simply-amount{
+        font-size: 1rem;
+    }
+    #cuenta .simply-word{
+        font-size: .5rem;
+    }
+}
+@media screen and (max-width: 326px) {
+    .img-respon{
+        width: 15rem !important;
+    }
+}
