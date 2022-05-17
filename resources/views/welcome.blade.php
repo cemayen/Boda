@@ -374,4 +374,6 @@
     <script src="{{ asset('js/simplyCountdown.min.js') }}" defer></script>
     <script src="{{ asset('js/main.js') }}" defer></script>
 
+</body>
+
 </html>
